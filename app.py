@@ -2,12 +2,16 @@ import streamlit as st
 from keras.models import load_model
 from PIL import Image, ImageOps
 import numpy as np
+import os
 
 # Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
 
-# Load the model
-model = load_model("keras_Model.h5", compile=False)
+
+
+model_path = os.path.join(os.path.dirname(__file__), "path_to_model", "keras_model.h5")
+model = load_model(model_path, compile=False)
+
 
 # Load the labels
 class_names = [line.strip() for line in open("labels.txt", "r").readlines()]
