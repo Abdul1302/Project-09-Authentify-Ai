@@ -9,8 +9,8 @@ np.set_printoptions(suppress=True)
 
 
 
-model_path = os.path.join(os.path.dirname(__file__), "keras_model.h5", "keras_model.h5")
-model = load_model(model_path, compile=False)
+# Load the model
+model = load_model("keras_model.h5", compile=False)
 
 
 # Load the labels
