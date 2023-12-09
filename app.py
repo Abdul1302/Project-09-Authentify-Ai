@@ -9,7 +9,7 @@ np.set_printoptions(suppress=True)
 
 
 
-model_path = os.path.join(os.path.dirname(__file__), "path_to_model", "keras_model.h5")
+model_path = os.path.join(os.path.dirname(__file__), "keras_model.h5", "keras_model.h5")
 model = load_model(model_path, compile=False)
 
 
