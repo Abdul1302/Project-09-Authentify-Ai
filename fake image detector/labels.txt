@@ -1,0 +1,3 @@
+0 Real Images
+1 Edited or Modified Images
+2 fake Images 
